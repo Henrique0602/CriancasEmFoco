@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/019/152/853/non_2x/hummingbird-graphic-clipart-design-free-png.png">
+    <title>Contato CeF</title>
+</head>
+
+<script>
+    function lerTexto() {
+        let elementos = document.querySelectorAll("p, h1, h2");
+        let textos = Array.from(elementos, element => element.textContent);
+
+        var mensagem = new SpeechSynthesisUtterance();
+        mensagem.text = textos.join(' ');
+
+        speechSynthesis.speak(mensagem);
+
+        window.addEventListener('beforeunload', () => {
+            speechSynthesis.cancel(); // Cancelar a reprodução da fala
+        });
+
+
+
+    }
+    lerTexto();
+</script>
+
+<body>
+
+    <header class="header">
+        <img src="https://static.vecteezy.com/system/resources/previews/019/152/853/non_2x/hummingbird-graphic-clipart-design-free-png.png"
+            alt="Logo da Crianças em Foco">
+        <h1 class="logo">Crianças em Foco</h1>
+        <nav class="navbar">
+            <a href="index.html" target="_blank" rel="noreferrer noopener" class="active">Home</a>
+            <a href="Sobre.html" target="_blank" rel="noreferrer noopener">Sobre</a>
+            <a href="contato.html" target="_blank" rel="noreferrer noopener">Contato</a>
+            <a href="login.html" target="_blank" rel="noreferrer noopener">Login</a>
+        </nav>
+    </header>
+
+    <div class="formularioContato">
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label>
+                <span><i class="icon icon-user-1"></i> Nome</span>
+                <input type="text" name="nome" required="">
+            </label>
+
+
+            <label>
+                <span><i class="icon icon-email"></i> E-mail</span>
+                <input type="text" name="email" class="fade_8S">
+            </label>
+
+            <label>
+                <span><i class="icon icon-flag"></i> Assunto</span>
+                <input type="text" name="assunto" required="">
+            </label>
+
+
+            <label>
+                <span><i class="icon icon-comment"></i> Mensagem</span>
+                <textarea name="mensagem" rows="3" required=""></textarea>
+            </label>
+
+
+            <input type="hidden" name="acao" value="enviar" />
+            <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o">Enviar</b></button>
+        </form>
+
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>
