@@ -64,7 +64,7 @@
 
 
 .carousel-item h5{
-   color: rgba(73, 175, 73, 0.808);
+   color: rgba(126, 224, 126, 0.808);
    font-weight: bold;
    font-size: 60px;
 }
@@ -387,6 +387,7 @@ p{
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -394,6 +395,8 @@ p{
 
 
 
+=======
+>>>>>>> 8ae0e28d0ae7c36432390a8f9b3f0a92a1f93262
 .container{
     text-align: center;
     padding: 20px;
@@ -430,11 +433,12 @@ p{
 
 
 .container1{
-    width: 90%;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     justify-content: center;
+    
 }
 
 .form {
@@ -443,18 +447,20 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   padding: 3rem;
+    padding: 3rem;
 }
 
 .form-header{
-    margin-bottom:  3rem;
+    margin-bottom:  2rem;
     display: flex;
     justify-content: space-between;
 }
 
 .login-button {
     display: flex;
+    justify-content: center;
     align-items: center;
+
 }
 
 .login-button button{
@@ -486,8 +492,9 @@ p{
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
-}
+    
 
+}
 .input-group {
     display: flex;
     flex-wrap: wrap;
@@ -500,6 +507,8 @@ p{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+
+
 }
 
 .input-box input{
@@ -607,6 +616,7 @@ p{
 
         }
 }
+<<<<<<< HEAD
 /* Depoimento*/
 
 .conatiner3 h2{
@@ -665,3 +675,6 @@ p{
     height: 200px;
     margin-top: 20px;
 }
+=======
+
+>>>>>>> 8ae0e28d0ae7c36432390a8f9b3f0a92a1f93262
