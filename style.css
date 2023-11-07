@@ -8,14 +8,13 @@
 
 
 .header{
-    height: 100px;
-    padding: 1.3rem 9%;
-    background-color:rgba(73, 175, 73, 0.808);
+    padding: 0.3rem;
+    background-color:#051F33;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
+
 }
 
 .header a{
@@ -28,10 +27,11 @@
 }
 
 .header img{
-   margin-top: 50px;
+   margin-top: 5px;
    width: 10vw;
-   margin-right: 40px;
-   transform: rotate(20deg);
+   margin-left: 70px;
+   margin-bottom: 10px;
+
 }
 
 
@@ -55,16 +55,16 @@
 }
 
 .navbar a:hover {
-    color: rgb(7, 87, 17);
+    color: #91E9FF;
 }
 
 .navbar a.active {
-    color: rgb(7, 87, 17);
+    color: #91E9FF;
 }
 
 
 .carousel-item h5{
-   color: rgba(126, 224, 126, 0.808);
+   color: #051F33;
    font-weight: bold;
    font-size: 60px;
 }
@@ -81,7 +81,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 100px;
+
+}
+
+.corpo2{
+    background-color: #91E9FF;
+    height: 100wh;
+    width: 100vw;
 }
 
 
@@ -92,14 +98,19 @@
 }
 
 .comeco{
-    margin-top: 100px;
     margin-left: 15%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 70%;    
+
 }
+
+.corpo3{
+    background-color: #051F33;
+}
+
 
 .inicial{
     margin-top: 100px;
@@ -107,6 +118,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+   
 }
 
 #hand{
@@ -118,20 +130,20 @@
 
 #tituloInicial{
     font-size: 50px;
-    color: rgba(73, 175, 73, 0.808);
+    color: #051F33;
 }
 
 #subtitulo{
     font-size: 40px;
-    color: rgba(73, 175, 73, 0.808);
+    color: #051F33;
 }
 #sub{
     font-size: 20px;
-    color: rgba(73, 175, 73, 0.808);
+    color: #051F33;
 }
 
 .corpo{
-    background-color: #e0e7e0;
+    background-color: #91E9FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,11 +151,14 @@
     padding: 5% 20% 5% 20%;
     margin-top: 200px;
 }
+.corpo4{
+    background-color: #051F33;
+}
 
 .missao{
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
+    margin-bottom: 150px;
 }
 
 .style{
@@ -156,12 +171,12 @@
 
 section .missao, #mis, #vis, #val, #cau {
     font-size: 50px;
-    color: rgba(73, 175, 73, 0.808)
+    color: #051F33
 }
 
 #dep{
     font-size: 50px;
-    color: rgba(73, 175, 73, 0.808)
+    color: #051F33
 }
 
 .middle{
@@ -178,7 +193,7 @@ section .missao, #mis, #vis, #val, #cau {
 
 .bb{
     font-size: 17px;
-    color: rgba(73, 175, 73, 0.808);
+    color: #051F33;
 }
 
 .causas{
@@ -187,7 +202,7 @@ section .missao, #mis, #vis, #val, #cau {
     justify-content: center;
     align-items: center;
     padding: 5% 20% 5% 20%;
-    background-color: rgb(156, 223, 156);
+    background-color: #051F33;
 }
 
 footer{
@@ -203,29 +218,28 @@ footer{
     position: absolute;
     right: 0px;
     bottom: 600px;
-    background-color: rgba(73, 175, 73, 0.808);
-    border: none;
+    background-color: #051F33;
+    border: black;
 }
 
 #bt:hover{
     transition: all 0.2s;
-    box-shadow: 0 0 5px 0px rgb(62, 80, 67);
+    box-shadow: 0 0 5px 0px #051F33;
 }
 
 #btn{
-    background-color: rgba(73, 175, 73, 0.808);
+    background-color: #E6C587;
     border: none;
     font-size: 30px;
     margin-top: 70px;
+    color: black;
+    margin-bottom: 10%;
 }
 
 #btn:hover{
     transition: all 0.2s;
-    box-shadow: 0 0 5px 0px rgb(62, 80, 67);
+    box-shadow: 0 0 5px 0px rgb(0, 0, 0);
 }
-
-
-
 
 
 
@@ -386,17 +400,6 @@ p{
     }
 }
 
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> 8ae0e28d0ae7c36432390a8f9b3f0a92a1f93262
 .container{
     text-align: center;
     padding: 20px;
@@ -426,7 +429,7 @@ p{
 
 #login{
     font-weight: bold;
-    color: rgba(73, 175, 73, 0.808);
+    color: #E6C587;
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -454,6 +457,7 @@ p{
     margin-bottom:  2rem;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .login-button {
@@ -465,7 +469,7 @@ p{
 
 .login-button button{
     border: none;
-    background-color: rgba(73, 175, 73, 0.808);
+    background-color: #E6C587;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -474,7 +478,7 @@ p{
 }
 
 .login-button button:hover{
-    background-color: rgba(55, 133, 55, 0.808);
+    background-color: #E6C587;
 }
 
 .login-button button a {
@@ -488,7 +492,7 @@ p{
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: rgba(73, 175, 73, 0.808);
+    background-color: #E6C587;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -509,6 +513,7 @@ p{
     margin-bottom: 1.1rem;
 
 
+
 }
 
 .input-box input{
@@ -526,14 +531,14 @@ p{
 }
 
 .input-box input:focus-visible{
-    outline: 1px solid rgba(73, 175, 73, 0.808);
+    outline: 1px solid #E6C587;
 }
 
 .input-box label,
 .gender-titlle h6 {
     font-size: 0.90rem;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .input-box input::placeholder{
@@ -566,7 +571,7 @@ p{
     width: 100%;
     margin-top: 2.5rem;
     border: none;
-    background-color: rgba(73, 175, 73, 0.808);
+    background-color: #E6C587;
     padding: 0.82rem;
     border-radius: 5px;
     cursor: pointer;
@@ -616,7 +621,6 @@ p{
 
         }
 }
-<<<<<<< HEAD
 /* Depoimento*/
 
 .conatiner3 h2{
@@ -675,6 +679,4 @@ p{
     height: 200px;
     margin-top: 20px;
 }
-=======
 
->>>>>>> 8ae0e28d0ae7c36432390a8f9b3f0a92a1f93262
