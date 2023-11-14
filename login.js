@@ -1,29 +1,56 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCvLFSxFFMm3M0vquNJ0KxMNKcYArQgaGI",
-    authDomain: "projeto2mibteste-3ba55.firebaseapp.com",
-    projectId: "projeto2mibteste-3ba55",
-    storageBucket: "projeto2mibteste-3ba55.appspot.com",
-    messagingSenderId: "824573277",
-    appId: "1:824573277:web:63e3c4c655b7ffe758bcb4"
-};
+    apiKey: "AIzaSyDFt9rbCz9G-QxetDWfSfEPjC4m3ZE4Z1c",
+    authDomain: "criancasemfoco-a0b2f.firebaseapp.com",
+    projectId: "criancasemfoco-a0b2f",
+    storageBucket: "criancasemfoco-a0b2f.appspot.com",
+    messagingSenderId: "683066524349",
+    appId: "1:683066524349:web:79187ddef2f8cbdc28edd4",
+  };
 
 firebase.initializeApp(firebaseConfig);
 
-const emailField = document.getElementById('email');
-const passwordField = document.getElementById('password');
-const loginButton = document.getElementById('loginButton');
-loginButton.addEventListener('click', () => {
- const email = emailField.value;
- const password = passwordField.value;
- firebase.auth().signInWithEmailAndPassword(email, password)
- .then((userCredential) => {
- // Usuário logado com sucesso
- const user = userCredential.user;
- console.log('Usuário logado:', user);
- })
- .catch((error) => {
- // Tratar erros de autenticação
- const errorMessage = error.message;
- console.error('Erro de autenticação:', errorMessage);
- });
-});
+
+
+function createLogin(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById("password").value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(user=>{
+        console.log('Usuário ', user)
+        alert("Usuário criado. Login feito.")
+    }).catch(error =>{
+        alert("Não foi possível criar a conta!")
+        console.log('Erro:', error);
+    })
+}
+
+function loginEmail(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById("password").value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password).then(()=>{
+        alert('Login Efetuado com sucesso!')
+    }).catch(error =>{
+        alert("Não foi possível fazer o login!")
+        console.log('Erro:', error);
+    })
+}
+
+
+function deletaUsuario(){
+    var currentUser;
+    currentUser = firebase.auth().currentUser;
+    if(currentUser){
+        currentUser.delete().then(()=>{
+            alert("Usuário")
+        }).catch(error =>{
+            console.log('Erro:', error);
+        })
+    }
+}
+
+function logout(){
+    firebase.auth().signOut().then(()=>{
+        alert("Usuário deslogado")
+    })
+}

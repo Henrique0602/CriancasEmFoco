@@ -14,7 +14,7 @@
     <title>Ong Crianças em Foco</title>
 </head>
 
-<body id="body">
+<body>
 
     <header class="header">
         <img src="Design_sem_nome-removebg-preview.png"
@@ -24,22 +24,56 @@
             <a href="index.html">Home</a>
             <a href="sobre.html" >Sobre</a>
             <a href="contato.html" >Contato</a>
-            <a href="login.html" class="active" >Login</a>
+            <a href="login.html" class="active">Login</a>
             <a href="Cadastro.html" >Cadastre-se</a>
         </nav>
     </header>
+    
+    <main>
 
-    <div class="container">
-    <h1 id="login">Login</h1>
-    <input type="email" id="email" placeholder="E-mail">
-    <input type="password" id="password" placeholder="Senha">
-    <button id="loginButton">Entrar</button>
+    <article class="corpo5">
+    <div class="container1">
+        <div class="form">
+            <form action="/cadastro" method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Entre em sua conta</h1>
+                    </div>
+                    <div class="login-button">
+                        <button ><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                    </div>
+
+                    <div class="gender-group">
+                        
+
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+  
+    </article>
 
+    </main>
 
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    <script src="login.js"></script>
 
     <footer class="rodape" id="contato">
         <div class="rodape-div">
@@ -83,6 +117,9 @@
         <p >Copyright © 2023 Todos os Direitos Reservados.</p>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="login.js"></script>
 </body>
 
 
